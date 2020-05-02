@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Picture Zoom</title>
+</head>
+
+<body>
+    <div class="image-container">
+        <div class="zoomOnHover">
+            <img onmouseover="zoomOnHover(event)" onmouseout="deleteImage(event)" onmousemove="moveImage(event)"
+                src="./pictures/phantom-min.jpg" data-src="./pictures/phantom.jpg" />
+            <div class="zoomed"></div>
+        </div>
+        <div class="zoomOnHover">
+            <img onmouseover="zoomOnHover(event)" onmouseout="deleteImage(event)" onmousemove="moveImage(event)"
+                src="./pictures/mig-min.jpg" data-src="./pictures/mig.jpg" />
+            <div class="zoomed"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!--
+// dla klasy .zoomOnHover odtwórz taki sam efekt
+// który powstaje przy najechaniu kursorem 
+// na główne zdjęcie produktu w https://nbsklep.pl/new_balance_cm997hae.html
+
+function zoomOnHover(){}
+
+
+
+// keywords: position absolute, document create element, html element position
+
+-->
